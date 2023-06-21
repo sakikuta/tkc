@@ -6,48 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>TKC</title>
 </head>
 
-<body>
+<body id="top">
     <div class="wrapper">
         <header class="nuv">
             <h1>
-                <img src="./images/title.svg" alt="デジタル庁">
+                <img src="./assets/images/title.svg" alt="デジタル庁">
             </h1>
-            <a href="#" class="home">ホーム</a>
-            <p class="type">利用者別</p>
-            <ul>
-                <li><a href="#">一般</a></li>
-                <li><a href="#">行政・事業者</a></li>
-                <li><a href="#">報道関係者</a></li>
-            </ul>
-            <p>目的別</p>
-            <ul>
-                <li><a href="#">サービスを見る</a></li>
-                <li><a href="#">活動・施策を知る</a></li>
-                <li><a href="#">声を届ける</a></li>
-            </ul>
+            <div class="header-items sp-on">
+                <div class="header-search">
+                    <img src="./assets/images/search.svg" alt="">
+                </div>
+                <div id="hamburger">
+                    <div class="header-hamburger is-active header-hamburger--open">
+                        <img src="./assets/images/hamburger_open.svg" alt="">
+                    </div>
+                    <div class="header-hamburger header-hamburger--close">
+                        <img src="./assets/images/hamburger_close.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="pc-on">
+                <a href="#" class="home">ホーム</a>
+                <p class="type">利用者別</p>
+                <ul>
+                    <li><a href="#">一般</a></li>
+                    <li><a href="#">行政・事業者</a></li>
+                    <li><a href="#">報道関係者</a></li>
+                </ul>
+                <p>目的別</p>
+                <ul>
+                    <li><a href="#">サービスを見る</a></li>
+                    <li><a href="#">活動・施策を知る</a></li>
+                    <li><a href="#">声を届ける</a></li>
+                </ul>
+            </div>
+
         </header>
         <div class="inform">
             <p class="title">重要なお知らせ</p>
             <div class="box top-box">
                 <a href="#">
                     <p>マイナンバーカード関連サービスの誤登録等の事案について、ご自身での確認方法やご質問・ご不安にお答えします。マイナンバー総合フリーダイヤル（0120-95-0178）でも受け付けております
-                        <span>2023年5月27日</span></p>
+                        <span>2023年5月27日</span>
+                    </p>
                 </a>
             </div>
             <p class="title">トピック</p>
             <div class="box img-box">
                 <a href="">
-                    <img src="./images/mynumber_1.jpg" alt="">
+                    <img src="./assets/images/mynumber_1.jpg" alt="">
                     <h2>マイナンバー制度・マイナンバーカードのご質問・ご不安にお答えします</h2>
                 </a>
             </div>
             <div class="box img-box">
                 <a href="">
-                    <img src="./images/mynumber_2.jpg" alt="">
+                    <img src="./assets/images/mynumber_2.jpg" alt="">
                     <h2>政策データダッシュボード（ベータ版）</h2>
                 </a>
             </div>
@@ -172,48 +189,50 @@
             </div>
         </div>
         <div class="sub-nuv">
-            <ul>
-                <li><a href="#">サイト内検索</a></li>
-            </ul>
-            <ul class="sub-nuv-new">
-                <li><a href="#">新着・更新情報</a></li>
-                <li><a href="#">プレスルーム</a></li>
-                <li><a href="#">大臣等会見</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">組織情報</a></li>
-                <li><a href="#">政策</a></li>
-                <li><a href="#">会議等</a></li>
-                <li><a href="#">法令</a></li>
-                <li><a href="#">採用</a></li>
-                <li><a href="#">資料</a></li>
-                <li><a href="#">申請・届出</a></li>
-                <li><a href="#">調達情報</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">Global Site</a></li>
-            </ul>
-            <div>
-                <p class="title">注目のトピック</p>
+            <div class="pc-on">
                 <ul>
-                    <li><a href="#">マイナンバー制度・マイナンバーカードのご質問・ご不安にお答えします</a></li>
-                    <li><a href="#">政策データダッシュボード（ベータ版）</a></li>
+                    <li><a href="#">サイト内検索</a></li>
                 </ul>
-            </div>
-            <div class="sub-nuv-policy">   
+                <ul class="sub-nuv-new">
+                    <li><a href="#">新着・更新情報</a></li>
+                    <li><a href="#">プレスルーム</a></li>
+                    <li><a href="#">大臣等会見</a></li>
+                </ul>
                 <ul>
-                    <li><a href="#">サイトポリシー</a></li>
-                    <li><a href="#">プライバシーポリシー</a></li>
-                    <li><a href="#">ウェブアクセシビリティ</a></li>
+                    <li><a href="#">組織情報</a></li>
+                    <li><a href="#">政策</a></li>
+                    <li><a href="#">会議等</a></li>
+                    <li><a href="#">法令</a></li>
+                    <li><a href="#">採用</a></li>
+                    <li><a href="#">資料</a></li>
+                    <li><a href="#">申請・届出</a></li>
+                    <li><a href="#">調達情報</a></li>
                 </ul>
-                <ul class="policy">
-                    <li><a href="#">コピーライトポリシー</a></li>
-                    <li><a href="" class="policy-a">SNS</a></li>
+                <ul>
+                    <li><a href="#">Global Site</a></li>
                 </ul>
-                <ul class="policy">
-                    <li><a href="#">ご意見・ご要望</a></li>
-                    <li><a href="" class="policy-a">サイトマップ</a></li>
-                </ul>
+                <div>
+                    <p class="title">注目のトピック</p>
+                    <ul>
+                        <li><a href="#">マイナンバー制度・マイナンバーカードのご質問・ご不安にお答えします</a></li>
+                        <li><a href="#">政策データダッシュボード（ベータ版）</a></li>
+                    </ul>
+                </div>
+                <div class="sub-nuv-policy">
+                    <ul>
+                        <li><a href="#">サイトポリシー</a></li>
+                        <li><a href="#">プライバシーポリシー</a></li>
+                        <li><a href="#">ウェブアクセシビリティ</a></li>
+                    </ul>
+                    <ul class="policy">
+                        <li><a href="#">コピーライトポリシー</a></li>
+                        <li><a href="" class="policy-a">SNS</a></li>
+                    </ul>
+                    <ul class="policy">
+                        <li><a href="#">ご意見・ご要望</a></li>
+                        <li><a href="" class="policy-a">サイトマップ</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -221,7 +240,7 @@
         <div class="wrapper">
             <div class="nuv">
                 <h1>
-                    <img src="./images/title.svg" alt="デジタル庁">
+                    <img src="./assets/images/title.svg" alt="デジタル庁">
                 </h1>
                 <a href="#" class="home">ホーム</a>
                 <p>利用者別</p>
@@ -264,23 +283,108 @@
                 <ul>
                     <li>
                         <a href="https://twitter.com/digital_jpn">
-                            <img src="./images/twitter.svg" alt="">
+                            <img src="./assets/images/twitter.svg" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="https://www.youtube.com/channel/UCKmJk25wcPwCecf7nV9HwCw">
-                            <img src="./images/youtube.svg" alt="">
+                            <img src="./assets/images/youtube.svg" alt="">
                         </a>
                     </li>
                     <li>
-                         <a class="digital-gov" href="https://digital-gov.note.jp/">
-                            <img src="./images/original_logo.svg" alt="">
+                        <a class="digital-gov" href="https://digital-gov.note.jp/">
+                            <img src="./assets/images/original_logo.svg" alt="">
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
     </footer>
+    <div>
+        <a class="arrow" href="#top"><img src="./assets/images/arrow.svg" alt=""></a>
+    </div>
+
+    <!-- モーダルの記述 -->
+    <div class="modal sp-on">
+        <div>
+            <a href="#" class="home">ホーム</a>
+            <a href="#">サイト内検索</a>
+            <p class="type">利用者別</p>
+            <ul>
+                <li><a href="#">一般</a></li>
+                <li><a href="#">行政・事業者</a></li>
+                <li><a href="#">報道関係者</a></li>
+            </ul>
+            <p>目的別</p>
+            <ul class="modal-service">
+                <li><a href="#">サービスを見る</a></li>
+                <li><a href="#">活動・施策を知る</a></li>
+                <li><a href="#">声を届ける</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="sub-nuv-new">
+                <li><a href="#">新着・更新情報</a></li>
+                <li><a href="#">プレスルーム</a></li>
+                <li><a href="#">大臣等会見</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">組織情報</a></li>
+                <li><a href="#">政策</a></li>
+                <li><a href="#">会議等</a></li>
+                <li><a href="#">法令</a></li>
+                <li><a href="#">採用</a></li>
+                <li><a href="#">資料</a></li>
+                <li><a href="#">申請・届出</a></li>
+                <li><a href="#">調達情報</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Global Site</a></li>
+            </ul>
+            <div>
+                <p class="title">注目のトピック</p>
+                <ul>
+                    <li><a href="#">マイナンバー制度・マイナンバーカードのご質問・ご不安にお答えします</a></li>
+                    <li><a href="#">政策データダッシュボード（ベータ版）</a></li>
+                </ul>
+            </div>
+            <div class="sub-nuv-policy">
+                <ul>
+                    <li><a href="#">サイトポリシー</a></li>
+                    <li><a href="#">プライバシーポリシー</a></li>
+                    <li><a href="#">ウェブアクセシビリティ</a></li>
+                    <li><a href="#">コピーライトポリシー</a></li>
+                    <li><a href="#">SNS</a></li>
+                    <li><a href="#">ご意見・ご要望</a></li>
+                    <li><a href="#">サイトマップ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sub-nuv">
+            <p class="title">デジタル庁へのアクセス</p>
+            <span>〒102-0094　東京都千代田区紀尾井町1-3　東京ガーデンテラス紀尾井町 19階、20階</span>
+            <ul>
+                <li>
+                    <a href="https://twitter.com/digital_jpn">
+                        <img src="./assets/images/twitter.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCKmJk25wcPwCecf7nV9HwCw">
+                        <img src="./assets/images/youtube.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a class="digital-gov" href="https://digital-gov.note.jp/">
+                        <img src="./assets/images/original_logo.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
